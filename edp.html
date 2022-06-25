@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+body {
+/* Location of the image for page */
+<h1>SEEKER'S POINT</h1>
+background-image:" C:\Users\ritha\OneDrive\Desktop\EDP\seeker.png";
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+#Home {background-color: magenta;}
+#Signup {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body >
+
+<button class="tablink" onclick="openPage('Home', this, 'magenta')">Home</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<br>
+<br>
+<br>
+<h1 align="center">SEEKER'S POINT</h1>
+<div id="Home" class="tabcontent">
+  <h1 style ALIGN="center">SEEKER'S POINT</h1>
+<pre style ALIGN="right"> <font size=5,font type="Arial black">Students waste a enormous amount of time in searching problems.
+The website here provides all the information and details of  problem statements available.</pre></font size>
+<img src="https://thumb9.shutterstock.com/image-photo/stock-vector-school-exam-test-results-vector-illustration-student-in-suit-holding-examination-quiz-paper-form-450w-384466192.jpg" alt="STUDENTS RESULT" width="450" height="470" ALIGN="right">
+<a href="home.html">Courses</a>
+</div>
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <h1>THIAGARAJAR COLLEGE OF ENGINEERING,MADURAI</h1>
+<h4>COMPUTER SCIENCE AND ENGINEERING</h4>
+<style>
+body {
+/* Location of the image for page */
+background-image: url(https://cdn4.vectorstock.com/i/1000x1000/80/83/problem-solving-concept-business-vector-22818083.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+<a href="https://www.tcarts.in/">DO NOTICE US HERE</a>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>We are here to solve your problem of finding problem statement for your projects. </p>
+<textarea name="comments" rows="10" cols="20">
+  Any queries?
+  </textarea><br><br>
+<input type="submit" value="Submit">
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html>
